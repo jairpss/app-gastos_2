@@ -10,6 +10,9 @@ import ExpensesList from './components/ExpensesList'
 import ExpensesByCategory from './components/ExpensesByCategory'
 import EditExpense from './components/EditExpense'
 import UserRegister from './components/UserRegister'
+import {Helmet} from "react-helmet"
+import favicon from './images/monedas.png'
+
 
 //Fonts
 WebFont.load({
@@ -20,19 +23,23 @@ WebFont.load({
 
 const Index = () => {
   return ( 
-    <BrowserRouter>
-      <Container>
-        <Routes>
-          <Route path="/login" element={<Login />} />
-          <Route path="/user-registration" element={<UserRegister />} />
-          <Route path="/expenses-category" element={<ExpensesByCategory />} />
-          <Route path="/expenses-list" element={<ExpensesList />} />
-          <Route path="/edit-expense/:id" element={<EditExpense />} />
-          <Route path="/" element={<App />} />
-        </Routes>
-      </Container>
-    </BrowserRouter>
-    
+    <>
+      <Helmet>
+        <link rel="shortcut icon" href={favicon} type="image/x-icon"/>
+      </Helmet>
+      <BrowserRouter>
+        <Container>
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/user-registration" element={<UserRegister />} />
+            <Route path="/expenses-category" element={<ExpensesByCategory />} />
+            <Route path="/expenses-list" element={<ExpensesList />} />
+            <Route path="/edit-expense/:id" element={<EditExpense />} />
+            <Route path="/" element={<App />} />
+          </Routes>
+        </Container>
+      </BrowserRouter>
+    </>
    );
 }
  
