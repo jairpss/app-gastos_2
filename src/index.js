@@ -12,7 +12,7 @@ import EditExpense from './components/EditExpense'
 import UserRegister from './components/UserRegister'
 import {Helmet} from "react-helmet"
 import favicon from './images/monedas.png'
-
+import Background from './elements/Background'
 
 //Fonts
 WebFont.load({
@@ -39,6 +39,8 @@ const Index = () => {
           </Routes>
         </Container>
       </BrowserRouter>
+
+      <Background />
     </>
    );
 }
