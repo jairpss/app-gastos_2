@@ -12,7 +12,7 @@ const Header = styled.div`
     }
 `;
  
-const Title = styled.h1`
+const Title = styled.h1` 
     font-weight: 500;
     text-transform: uppercase;
     font-size: 2.5rem; /* 40px */

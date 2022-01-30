@@ -16,6 +16,7 @@ const App = () => {
             <ButtonsContainer>
               <ButtonHeader to='/expenses-category'>Categories</ButtonHeader>
               <ButtonHeader to='/expenses-list'>Expenses list</ButtonHeader>
+              <ButtonHeader to='/'>X</ButtonHeader>
             </ButtonsContainer>
           </HeaderContainer>
         </Header>
