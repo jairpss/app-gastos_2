@@ -1,9 +1,9 @@
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import {Header, Title, ButtonsContainer, HeaderContainer} from './elements/Header'
-import Button from './elements/Button'
+import ButtonHeader from './elements/ButtonHeader'
 
-function App() {
+const App = () => {
   return (
       <>
         <Helmet>
@@ -14,9 +14,8 @@ function App() {
           <HeaderContainer>
             <Title>Add Expense</Title>
             <ButtonsContainer>
-              <Button to='/expenses-category'>Categories</Button>
-              <Button to='/expenses-list'>Expenses list</Button>
-              <Button> X </Button>
+              <ButtonHeader to='/expenses-category'>Categories</ButtonHeader>
+              <ButtonHeader to='/expenses-list'>Expenses list</ButtonHeader>
             </ButtonsContainer>
           </HeaderContainer>
         </Header>

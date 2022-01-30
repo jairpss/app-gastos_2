@@ -17,7 +17,7 @@ import Background from './elements/Background'
 //Fonts
 WebFont.load({
   google: {
-    families: ['Rubik:400,500,600,700', 'sans-erif']
+    families: ['Rubik:400,500,600,700', 'sans-serif']
   }
 });
 
@@ -35,7 +35,7 @@ const Index = () => {
             <Route path="/expenses-category" element={<ExpensesByCategory />} />
             <Route path="/expenses-list" element={<ExpensesList />} />
             <Route path="/edit-expense/:id" element={<EditExpense />} />
-            <Route path="/" element={<App />} />
+            <Route path="/" element={<App />}/>
           </Routes>
         </Container>
       </BrowserRouter>
