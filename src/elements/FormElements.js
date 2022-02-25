@@ -27,7 +27,7 @@ const Form = styled.form`
         width: 100%;
         text-align: center;
         padding: 2.5rem 0;
-        font-family: 'Rubik', sans-serif;
+        font-family: 'Manrope', sans-serif;
         &::placeholder {
             color: rgba(0,0,0,.2);
         }

@@ -10,8 +10,8 @@ const Btn = styled.button`
     line-height: 3.12rem; /* 50px */
     text-align: center;
     margin-right: 1.25rem; /* 20px */
-    border: none;
-    background: #100F10;
+    border: none; 
+    background: #1A1B25;
     color: #fff;
     display: flex;
     align-items: center;

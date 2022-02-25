@@ -12,12 +12,11 @@ import EditExpense from './components/EditExpense'
 import UserRegister from './components/UserRegister'
 import {Helmet} from "react-helmet"
 import favicon from './images/monedas.png'
-import Background from './elements/Background'
 
 //Fonts
 WebFont.load({
   google: {
-    families: ['Rubik:400,500,600,700', 'sans-serif']
+    families: ['Manrope:400,500,600,700,800', 'sans-serif']
   }
 });
 
@@ -40,7 +39,6 @@ const Index = () => {
         </Container>
       </BrowserRouter>
 
-      <Background />
     </>
    );
 }
